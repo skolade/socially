@@ -1,0 +1,42 @@
+<head>
+  <base href="/">
+  <title>Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meteor Material Design Light BoilerPlate">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <shmck-navbar></shmck-navbar>
+    <div class="android-content mdl-layout__content">
+    <main layout="column" flex>
+        <ui-view></ui-view>
+    </main>
+    <shmck-footer></shmck-footer>
+</div>
+  <!-- <section layout="column" flex class="page">
+  <md-content layout="row" flex class="main-content">
+    <shmck-sidebar layout="column" md-is-locked-open="$media('gt-lg')" ng-show="$root.currentUser"></shmck-sidebar>
+
+  </md-content>
+  <shmck-footer></shmck-footer>
+
+
+  </section> -->
+  </div>
+</body>

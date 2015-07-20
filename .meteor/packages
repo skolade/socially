@@ -1,0 +1,86 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+
+# Sass
+fourseven:scss
+
+# TypeScript
+dataflows:typescript-utils
+
+# Accounts
+accounts-password
+accounts-facebook
+accounts-twitter
+accounts-google
+accounts-base
+#accounts-ui
+accounts-ui-unstyled
+service-configuration
+http
+email
+meteorhacks:ssr
+meteorhacks:fast-render
+meteorhacks:npm
+meteorhacks:kadira
+
+
+
+# Angular
+urigo:angular
+urigo:angular-ui-router
+angularjs:angular-sanitize
+angular:angular-animate
+angular:angular-touch
+angular:angular-aria
+angular:angular-messages
+
+# Material Design
+angular:angular-material
+jkolade:mmdl
+
+# Translate
+tinque:angular-translate
+
+# Pagination
+tmeasday:publish-counts
+angularutils:pagination
+
+# Models
+aldeed:simple-schema
+aldeed:collection2
+
+# Telescope
+#telescope:scoring
+#telescope:core
+#telescope:lib
+netanelgilad:ng-infinite-scroll
+anti:fake
+
+#socially
+socially:server-time
+socially:base-model
+socially:user-model
+socially:server-presence
+socially:albums
+socially:commentable
+socially:friendships
+socially:likeable
+socially:linkable-model
+socially:messaging
+socially:user-presence
+socially:user-profile
+
+#SEO/SMO
+#manuelschoebel:ms-seo
+
+sacha:spin
+mrt:moment
+rcy:nouislider
+
+
+npm-container

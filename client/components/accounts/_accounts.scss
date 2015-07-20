@@ -1,0 +1,32 @@
+.accounts {
+  margin: 0;
+  padding: 50px;
+  background-image: url('images/LoginBackground.png');
+  // background-color: $primary;
+  height: 100vm;
+  margin-bottom: 0;
+  md-card {
+    padding: 50px;
+  }
+  .accounts--error {
+
+  }
+  .accounts--social {
+    margin-top: 20px;
+    .md-fab {
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+  .accounts--form {
+    margin-top: 35px;
+  }
+  .accounts--redirect {
+    margin-top: 15px;
+    &__link {
+      font-size: 0.8em;
+      padding: 0 5px;
+    }
+  }
+}
