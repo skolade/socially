@@ -1,11 +1,12 @@
-# Angular-Meteor-Boilerplate (WIP)
+# Meteor-Angular boilerplate with ngmaterial and mdl (material Design lite) this is work in progress (WIP)
 
-Currently a work in progress. Incomplete.
+Currently a work in progress. Incomplete. This is a folk from https://github.com/ShMcK/Angular-Meteor-Boilerplate
 
-A modular full-featured full-stack boilerplate for Angular-Meteor. Written in TypeScript.
+A modular full-featured full-stack boilerplate for Angular-Meteor.
 
 Front-End:
 * Angular-Material + Icon Sets
+* Google Material Design Light
 * ngAnimate, ngSanitize, ngTouch, ngAria, ngMessages
 * ngInfiniteScroll
 * Ui-Router Setup
@@ -17,3 +18,8 @@ User Accounts:
 * OAuth: Facebook, Twitter, Google, Github (options)
 * Email verification through Kickbox.io (option)
 * Welcome Email (option)
+* Friendship (WIP)
+* Commentable (WIP)
+* Likeable (WIP)
+* Album (WIP)
+* Messaging (WIP)
