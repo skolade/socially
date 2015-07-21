@@ -76,6 +76,6 @@ function itemList() {
  * default home page
  * @type {angular.module}
  */
-angular.module('shmck.items')
+angular.module('socially.items')
     .directive('itemList', itemList);
 //# sourceMappingURL=item-list.js.map

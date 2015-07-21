@@ -21,13 +21,13 @@ angular.module('app', [
   'infinite-scroll',
 
   /* load components */
-  'shmck.accounts',
-  'shmck.layout',
-  'shmck.items',
+  'socially.accounts',
+  'socially.layout',
+  'socially.items',
 
   /* states */
-  'shmck.main',
-  'shmck.secondary'
+  'socially.main',
+  'socially.secondary'
 ]);
 
 /**

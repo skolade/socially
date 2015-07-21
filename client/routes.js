@@ -9,7 +9,7 @@ angular.module('app')
     $stateProvider
         .state('main', {
         url: '/',
-        template: "<shmck-main></shmck-main>"
+        template: "<socially-main></socially-main>"
     })
         .state('secondary', {
         url: '/secondary',
@@ -18,13 +18,13 @@ angular.module('app')
 });
 
 
-Router.route('/', {
-  name: 'home',
-  action: function () {
-    this.render('home');
-    SEO.set({ title: 'Home - ' + Meteor.App.NAME });
-  }
-});
+// Router.route('/', {
+//   name: 'home',
+//   action: function () {
+//     this.render('home');
+//     SEO.set({ title: 'Home - ' + Meteor.App.NAME });
+//   }
+// });
 /* require user for route */
 //"currentUser": ["$meteor", function($meteor:angular.meteor.IMeteorService){
 //  return $meteor.requireUser();

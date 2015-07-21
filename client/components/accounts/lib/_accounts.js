@@ -3,5 +3,5 @@
  * Accounts Module
  * @type {angular.module}
  */
-angular.module('shmck.accounts', []);
+angular.module('socially.accounts', []);
 //# sourceMappingURL=_accounts.js.map

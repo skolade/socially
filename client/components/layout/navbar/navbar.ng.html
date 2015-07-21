@@ -1,4 +1,4 @@
-<!-- <md-toolbar class="navbar">
+<md-toolbar class="navbar" ng-hide="$root.currentUser">
   <div class="md-toolbar-tools">
     <md-button class="md-icon-button" aria-label="Side Menu" ng-click="navbar.Toggler.toggleLeft()" hide-gt-lg>
       <md-icon md-svg-icon="navigation:menu"></md-icon>
@@ -7,26 +7,7 @@
       <span translate="TITLE"></span>
     </h2>
     <span flex></span>
-    <md-button ui-sref="login" ng-hide="$root.currentUser" translate="ACCOUNTS.LOGIN" aria-label="Login"></md-button>
-
-    <div ng-show="$root.currentUser" class="accounts-profile">
-      <a ui-sref="profile">{{ $root.currentUser.username }}</a>
-    </div>
-    <md-button ui-sref="logout" ng-show="$root.currentUser" translate="ACCOUNTS.LOGOUT" aria-label="Logout"></md-button>
-
-    <md-button class="md-icon-button" aria-label="More">
-      <md-icon md-svg-icon="navigation:more_vert"></md-icon>
-    </md-button>
-  </div>
-</md-toolbar> -->
-
-<div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-       <div class="mdl-layout__header-row">
-         <span class="android-title mdl-layout-title">
-           <img class="android-logo-image" src="images/android-logo.png">
-         </span>
-         <!-- Add spacer, to align navigation to the right in desktop -->
-         <div class="android-header-spacer mdl-layout-spacer"></div>
+    <div class="android-header-spacer mdl-layout-spacer"></div>
          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
              <i class="material-icons">search</i>
@@ -35,29 +16,91 @@
              <input class="mdl-textfield__input" type="text" id="search-field" />
            </div>
          </div>
-         <!-- Navigation -->
          <div class="android-navigation-container">
-           <nav class="android-navigation mdl-navigation">
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-             <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
-           </nav>
-         </div>
-         <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-           <i class="material-icons">more_vert</i>
-         </button>
-         <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <nav class="android-navigation mdl-navigation">
+              <md-button class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</md-button>
+              <md-button class="mdl-navigation__link mdl-typography--text-uppercase" href="">Help</md-button>
+              <md-button class="mdl-navigation__link mdl-typography--text-uppercase" href="">Download</md-button>
+            </nav>
+          </div>
+    <md-button ui-sref="login" ng-hide="$root.currentUser" translate="ACCOUNTS.LOGIN" aria-label="Login"></md-button>
+
+    <div ng-show="$root.currentUser" class="accounts-profile">
+      <a ui-sref="profile">{{ $root.currentUser.username }}</a>
+    </div>
+    <md-button ui-sref="logout" ng-show="$root.currentUser" translate="ACCOUNTS.LOGOUT" aria-label="Logout"></md-button>
+
+    <md-button class="md-icon-button" aria-label="More" id="more-button">
+      <md-icon md-svg-icon="navigation:more_vert"></md-icon>
+    </md-button>
+
+    <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
            <li class="mdl-menu__item">5.0 Lollipop</li>
            <li class="mdl-menu__item">4.4 KitKat</li>
            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
            <li class="mdl-menu__item">Android History</li>
          </ul>
-         <span class="android-mobile-title mdl-layout-title">
-           <img class="android-logo-image" src="images/android-logo.png">
-         </span>
-       </div>
-     </div>
+  </div>
+</md-toolbar>
+<div ng-show="$root.currentUser">
+<header class="demo-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
+  <div class="mdl-layout__header-row">
+    <span class="mdl-layout-title">Home</span>
+    <div class="mdl-layout-spacer"></div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+      <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+        <i class="material-icons">search</i>
+      </label>
+      <div class="mdl-textfield__expandable-holder">
+        <input class="mdl-textfield__input" type="text" id="search" />
+        <label class="mdl-textfield__label" for="search">Enter your query...</label>
+      </div>
+    </div>
+
+    <div ng-show="$root.currentUser" class="accounts-profile">
+      <a ui-sref="profile">{{ $root.currentUser.username }}</a>
+    </div>
+    <md-button ui-sref="logout" ng-show="$root.currentUser" translate="ACCOUNTS.LOGOUT" aria-label="Logout"></md-button>
+
+    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+      <i class="material-icons">more_vert</i>
+    </button>
+
+    <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+      <li class="mdl-menu__item">About</li>
+      <li class="mdl-menu__item">Contact</li>
+      <li class="mdl-menu__item">Legal information</li>
+    </ul>
+  </div>
+</header>
+<div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+  <header class="demo-drawer-header">
+    <img src="images/user.jpg" class="demo-avatar">
+    <div class="demo-avatar-dropdown">
+      <span>hello@email.com</span>
+      <div class="mdl-layout-spacer"></div>
+      <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons">arrow_drop_down</i>
+      </button>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+        <button class="mdl-menu__item">hello@email.com</button>
+        <button class="mdl-menu__item">info@domain.net</button>
+        <button class="mdl-menu__item">Add another account...</button>
+      </ul>
+    </div>
+  </header>
+  <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">home</i>Home</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">inbox</i>Inbox</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">delete</i>Trash</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">report</i>Spam</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">forum</i>Forums</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">flag</i>Updates</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">local_offer</i>Promos</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">shopping_cart</i>Purchases</a>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">people</i>Social</a>
+    <div class="mdl-layout-spacer"></div>
+    <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons">help_outline</i></a>
+  </nav>
+</div>
+</div>

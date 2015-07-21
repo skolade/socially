@@ -7,7 +7,7 @@ var NavbarCtrl = (function () {
     return NavbarCtrl;
 })();
 NavbarCtrl.$inject = ['Toggler'];
-function shmckNavbar() {
+function sociallyNavbar() {
     return {
         templateUrl: 'client/components/layout/navbar/navbar.ng.html',
         controllerAs: 'navbar',
@@ -18,6 +18,6 @@ function shmckNavbar() {
  * Navbar
  * @type {angular.module}
  */
-angular.module('shmck.layout')
-    .directive('shmckNavbar', shmckNavbar);
+angular.module('socially.layout')
+    .directive('sociallyNavbar', sociallyNavbar);
 //# sourceMappingURL=navbar.js.map

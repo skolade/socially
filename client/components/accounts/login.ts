@@ -20,5 +20,5 @@ function login():angular.IDirective {
  * Login Component
  * @type {angular.module}
  */
-angular.module('shmck.accounts')
-  .directive('shmckLogin', login);
+angular.module('socially.accounts')
+  .directive('sociallyLogin', login);

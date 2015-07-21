@@ -18,6 +18,6 @@ function sidebar() {
  * Sidebar
  * @type {angular.module}
  */
-angular.module('shmck.layout')
-    .directive('shmckSidebar', sidebar);
+angular.module('socially.layout')
+    .directive('sociallySidebar', sidebar);
 //# sourceMappingURL=sidebar.js.map

@@ -14,5 +14,5 @@ function footer():angular.IDirective {
  * Footer
  * @type {angular.module}
  */
-angular.module('shmck.layout')
-  .directive('shmckFooter', footer);
+angular.module('socially.layout')
+  .directive('sociallyFooter', footer);

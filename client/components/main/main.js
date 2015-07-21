@@ -18,5 +18,5 @@ function main() {
  * default home page
  * @type {angular.module}
  */
-angular.module('shmck.main').directive('shmckMain', main);
+angular.module('socially.main').directive('sociallyMain', main);
 //# sourceMappingURL=main.js.map

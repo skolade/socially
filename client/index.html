@@ -21,22 +21,24 @@
 </head>
 
 <body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <shmck-navbar></shmck-navbar>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" ng-hide="$root.currentUser">
+    <socially-navbar></socially-navbar>
     <div class="android-content mdl-layout__content">
-    <main layout="column" flex>
+      <main>
+          <ui-view></ui-view>
+      </main>
+      <socially-footer></socially-footer>
+    </div>
+  </div>
+
+  <!-- This is for the dashboard and login section -->
+  <div class="mdl-layout mdl-js-layout mdl-layout-fixed-header" ng-show="$root.currentUser">
+    <socially-navbar-private></socially-navbar-private>
+    <div class="android-content mdl-layout__content">
+      <main layout="column" flex>
         <ui-view></ui-view>
-    </main>
-    <shmck-footer></shmck-footer>
-</div>
-  <!-- <section layout="column" flex class="page">
-  <md-content layout="row" flex class="main-content">
-    <shmck-sidebar layout="column" md-is-locked-open="$media('gt-lg')" ng-show="$root.currentUser"></shmck-sidebar>
-
-  </md-content>
-  <shmck-footer></shmck-footer>
-
-
-  </section> -->
+      </main>
+      <socially-footer></socially-footer>
+    </div>
   </div>
 </body>

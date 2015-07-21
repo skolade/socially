@@ -3,5 +3,5 @@
  * Main Module
  * @type {angular.module}
  */
-angular.module('shmck.main', []);
+angular.module('socially.main', []);
 //# sourceMappingURL=_main.js.map

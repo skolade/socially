@@ -4,20 +4,20 @@
  * Account Routes
  * @type {angular.module}
  */
-angular.module('shmck.accounts')
+angular.module('socially.accounts')
     .config(function ($stateProvider) {
     $stateProvider
         .state('login', {
         url: '/login',
-        template: '<shmck-login></shmck-login>'
+        template: '<socially-login></socially-login>'
     })
         .state('register', {
         url: '/register',
-        template: '<shmck-register></shmck-register>'
+        template: '<socially-register></socially-register>'
     })
         .state('resetpw', {
         url: '/resetpw',
-        template: '<shmck-reset-pw></shmck-reset-pw>'
+        template: '<socially-reset-pw></socially-reset-pw>'
     })
         .state('logout', {
         url: '/logout',
@@ -30,7 +30,7 @@ angular.module('shmck.accounts')
     })
         .state('profile', {
         url: '/profile',
-        template: '<shmck-profile></shmck-profile>'
+        template: '<socially-profile></socially-profile>'
     });
 });
 //# sourceMappingURL=routes.js.map

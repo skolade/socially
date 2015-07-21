@@ -32,5 +32,5 @@ function itemObject() {
  * Item Object from $stateParams.itemId
  * @type {anuglar.module}
  */
-angular.module('shmck.items').directive('itemObject', itemObject);
+angular.module('socially.items').directive('itemObject', itemObject);
 //# sourceMappingURL=item-object.js.map

@@ -3,5 +3,5 @@
  * Layout Module
  * @type {angular.module}
  */
-angular.module('shmck.layout', ['shmck.accounts']);
+angular.module('socially.layout', ['socially.accounts']);
 //# sourceMappingURL=_layout.js.map

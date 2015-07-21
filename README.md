@@ -1,6 +1,6 @@
 # Meteor-Angular boilerplate with ngmaterial and mdl (material Design lite) this is work in progress (WIP)
 
-Currently a work in progress. Incomplete. This is a folk from https://github.com/ShMcK/Angular-Meteor-Boilerplate
+Currently a work in progress. Incomplete. This is a folk from https://github.com/socially/Angular-Meteor-Boilerplate
 
 A modular full-featured full-stack boilerplate for Angular-Meteor.
 

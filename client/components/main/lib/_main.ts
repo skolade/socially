@@ -4,4 +4,4 @@
  * Main Module
  * @type {angular.module}
  */
-angular.module('shmck.main', []);
+angular.module('socially.main', []);

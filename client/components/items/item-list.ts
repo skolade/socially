@@ -92,5 +92,5 @@ function itemList():angular.IDirective {
  * default home page
  * @type {angular.module}
  */
-angular.module('shmck.items')
+angular.module('socially.items')
   .directive('itemList', itemList);

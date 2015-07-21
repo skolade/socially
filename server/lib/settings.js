@@ -7,7 +7,7 @@
  */
 var Settings = {
     site: {
-        title: 'YOUR_SITE_TITLE',
+        title: 'Socially',
         url: 'http://localhost:3000' // *
     },
     verifyEmail: false,

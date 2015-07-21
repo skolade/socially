@@ -21,4 +21,4 @@ function resetPw():angular.IDirective {
  * Password Reset Component
  * @type {angular.module}
  */
-angular.module('shmck.accounts').directive('shmckResetPw', resetPw);
+angular.module('socially.accounts').directive('sociallyResetPw', resetPw);

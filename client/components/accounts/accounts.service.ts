@@ -140,4 +140,4 @@ AccountsService.$inject = ['$meteor', '$state'];
  * handles login, oAuth, logout
  * @type {angular.module}
  */
-angular.module('shmck.accounts').service('Accounts', AccountsService);
+angular.module('socially.accounts').service('Accounts', AccountsService);

@@ -3,5 +3,5 @@
  * Items Module
  * @type {angular.module}
  */
-angular.module('shmck.items', []);
+angular.module('socially.items', []);
 //# sourceMappingURL=_items.js.map

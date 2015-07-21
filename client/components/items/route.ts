@@ -5,7 +5,7 @@
  * Item Routes
  * @type {angular.module}
  */
-angular.module('shmck.items')
+angular.module('socially.items')
   .config(function ($stateProvider:angular.ui.IStateProvider) {
     $stateProvider
       .state('item', {

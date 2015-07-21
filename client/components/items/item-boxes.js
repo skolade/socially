@@ -46,5 +46,5 @@ function itemBoxes() {
  * Item Boxes
  * @type {angular.module}
  */
-angular.module('shmck.items').directive('itemBoxes', itemBoxes);
+angular.module('socially.items').directive('itemBoxes', itemBoxes);
 //# sourceMappingURL=item-boxes.js.map

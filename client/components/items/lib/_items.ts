@@ -4,4 +4,4 @@
  * Items Module
  * @type {angular.module}
  */
-angular.module('shmck.items', []);
+angular.module('socially.items', []);

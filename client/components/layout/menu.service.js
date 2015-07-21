@@ -16,6 +16,6 @@ var MenuItems = (function () {
  * Menu Items
  * @type {angular.module}
  */
-angular.module('shmck.layout')
+angular.module('socially.layout')
     .service('MenuItems', MenuItems);
 //# sourceMappingURL=menu.service.js.map

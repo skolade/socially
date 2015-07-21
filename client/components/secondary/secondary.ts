@@ -22,5 +22,5 @@ function secondary():angular.IDirective {
  * Secondary
  * @type {angular.module}
  */
-angular.module('shmck.secondary')
+angular.module('socially.secondary')
   .directive('secondary', secondary);

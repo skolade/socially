@@ -20,5 +20,5 @@ function profile():angular.IDirective {
  * Profile Component
  * @type {angular.module}
  */
-angular.module('shmck.accounts')
-  .directive('shmckProfile', profile);
+angular.module('socially.accounts')
+  .directive('sociallyProfile', profile);

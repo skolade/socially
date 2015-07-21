@@ -6,7 +6,7 @@ class NavbarCtrl {
 }
 NavbarCtrl.$inject = ['Toggler'];
 
-function shmckNavbar():angular.IDirective {
+function sociallyNavbar():angular.IDirective {
   return {
     templateUrl: 'client/components/layout/navbar/navbar.ng.html',
     controllerAs: 'navbar',
@@ -18,5 +18,5 @@ function shmckNavbar():angular.IDirective {
  * Navbar
  * @type {angular.module}
  */
-angular.module('shmck.layout')
-  .directive('shmckNavbar', shmckNavbar);
+angular.module('socially.layout')
+  .directive('sociallyNavbar', sociallyNavbar);

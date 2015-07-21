@@ -19,6 +19,6 @@ function register() {
  * Register component
  * @type {angular.module}
  */
-angular.module('shmck.accounts')
-    .directive('shmckRegister', register);
+angular.module('socially.accounts')
+    .directive('sociallyRegister', register);
 //# sourceMappingURL=register.js.map

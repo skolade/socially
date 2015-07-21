@@ -18,6 +18,6 @@ function secondary() {
  * Secondary
  * @type {angular.module}
  */
-angular.module('shmck.secondary')
+angular.module('socially.secondary')
     .directive('secondary', secondary);
 //# sourceMappingURL=secondary.js.map

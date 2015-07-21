@@ -19,5 +19,5 @@ function resetPw() {
  * Password Reset Component
  * @type {angular.module}
  */
-angular.module('shmck.accounts').directive('shmckResetPw', resetPw);
+angular.module('socially.accounts').directive('sociallyResetPw', resetPw);
 //# sourceMappingURL=reset.js.map

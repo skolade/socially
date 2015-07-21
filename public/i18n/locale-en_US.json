@@ -1,5 +1,5 @@
 {
-  "TITLE": "Some Title",
+  "TITLE": "Socially",
   "SIDENAV": {
     "HEADER": "Header",
     "SUBHEADER": "Sub-Header"
@@ -14,5 +14,8 @@
   },
   "SECONDARY": {
     "TITLE": "Secondary"
+  },
+  "PROFILE":{
+    "TITLE": "Profile"
   }
 }

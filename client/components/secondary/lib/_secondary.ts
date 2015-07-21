@@ -4,4 +4,4 @@
  * Secondary Module
  * @type {angular.module}
  */
-angular.module('shmck.secondary', []);
+angular.module('socially.secondary', []);

@@ -11,7 +11,7 @@ angular.module('app')
     $stateProvider
       .state('main', {
         url: '/',
-        template: `<shmck-main></shmck-main>`
+        template: `<socially-main></socially-main>`
       })
       .state('secondary', {
         url: '/secondary',

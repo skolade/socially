@@ -31,6 +31,6 @@ Toggler.$inject = ['$mdUtil', '$mdSidenav', '$log'];
  * handles toggles for navbar & sidebar
  * @type {angular.module}
  */
-angular.module('shmck.layout')
+angular.module('socially.layout')
     .service('Toggler', Toggler);
 //# sourceMappingURL=toggler.service.js.map
