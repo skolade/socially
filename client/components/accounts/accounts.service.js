@@ -31,7 +31,7 @@ var AccountsService = (function () {
         }
         else {
             // success
-            this.$state.go('main');
+            this.$state.go('profile');
         }
     };
     /**
@@ -85,7 +85,7 @@ var AccountsService = (function () {
     };
     AccountsService.prototype.loginWithTwitter = function () {
         var _this = this;
-        this.$meteor.loginWithTwitter({}, 
+        this.$meteor.loginWithTwitter({},
         // Must get official approval for emails from Twitter
         function (e) {
             _this.handler(e);

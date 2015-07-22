@@ -30,15 +30,14 @@
       <socially-footer></socially-footer>
     </div>
   </div>
-
   <!-- This is for the dashboard and login section -->
-  <div class="mdl-layout mdl-js-layout mdl-layout-fixed-header" ng-show="$root.currentUser">
-    <socially-navbar-private></socially-navbar-private>
-    <div class="android-content mdl-layout__content">
-      <main layout="column" flex>
-        <ui-view></ui-view>
-      </main>
-      <socially-footer></socially-footer>
-    </div>
+  <div class="mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header" ng-show="$root.currentUser" layout="row" layout-fill>
+    <socially-db-sidebar></socially-db-sidebar>
+    <md-content layout="column">
+      <socially-db-navbar></socially-db-navbar>
+      <main flex layout-padding layout="column">
+         <ui-view></ui-view>
+       </main>
+    </md-content>
   </div>
 </body>

@@ -21,6 +21,8 @@ angular.module('app', [
     'socially.accounts',
     'socially.layout',
     'socially.items',
+    'sociallyApp',
+    'socially.dblayout',
     /* states */
     'socially.main',
     'socially.secondary'

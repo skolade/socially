@@ -3,5 +3,5 @@
  * Layout Module
  * @type {angular.module}
  */
-angular.module('socially.dashboardlayout', ['socially.accounts']);
+angular.module('socially.dblayout', ['socially.accounts']);
 //# sourceMappingURL=_layout.js.map

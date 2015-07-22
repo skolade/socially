@@ -1,0 +1,86 @@
+
+<div flex style="height: -webkit-calc(100% - 76px)">
+  <md-toolbar class="md-whiteframe-z3">
+    <a href="/"><img src="images/android-logo.png" alt="andriod"></a>
+  </md-toolbar>
+    <div ng-view flex layout-fill style="height: 100%">
+      <md-sidenav class="md-sidenav-left md-whiteframe-z3 sidebar" layout-fill md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+        <header class="drawer-header md-padding" layout-padding>
+                  <img src="images/user.jpg" class="avatar">
+                  <div class="avatar-dropdown">
+                    <span>{{$root.currentUser.username}}</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                      <i class="material-icons">arrow_drop_down</i>
+                    </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                      <button class="mdl-menu__item">hello@email.com</button>
+                      <button class="mdl-menu__item">info@domain.net</button>
+                      <button class="mdl-menu__item">Add another account...</button>
+                    </ul>
+                  </div>
+        </header>
+        <!-- <md-toolbar>
+          <h1 class="md-toolbar-tools" translate="SIDENAV.HEADER">Praytify</h1>
+        </md-toolbar> -->
+        <md-list layout="column" layout-padding>
+          <!--<md-subheader class="md-no-sticky" translate="SIDENAV.SUBHEADER"></md-subheader>-->
+            <md-list-item href="" layout="row" layout-padding>
+              <md-button>
+              <md-icon>home</md-icon>
+            Home
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding>
+              <md-button>
+                <md-icon class="md-acsent">inbox</md-icon>
+              Inbox
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding>
+              <md-button>
+              <md-icon class="md-acsent">delete</md-icon>
+              Trash
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding><md-button>
+              <md-icon class="md-acsent">report</md-icon>
+              Spam
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding><md-button>
+              <md-icon class="md-acsent">forum</md-icon>
+              Forums
+            </md-button>
+            </md-list-item>
+            <md-list-item  layout-padding href=""><md-button>
+              <md-icon class="md-acsent">flag</md-icon>
+              Updates
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding><md-button>
+              <md-icon class="md-acsent">local_offer</md-icon>
+              Promos
+            </md-button>
+            </md-list-item>
+            <md-list-item layout-padding href=""><md-button>
+              <md-icon class="md-acsent">shopping_cart</md-icon>
+              Purchases
+            </md-button>
+            </md-list-item>
+            <md-list-item layout-padding href=""><md-button>
+              <md-icon class="md-acsent">people</md-icon>
+              Social
+            </md-button>
+            </md-list-item>
+            <md-list-item href="" layout-padding><md-button>
+              <md-icon class="md-acsent">
+                help_outline
+              </md-icon>
+              </md-button>
+            </md-list-item>
+          <!--<md-divider></md-divider>-->
+        </md-list>
+      </md-sidenav>
+    </div>
+</div>
