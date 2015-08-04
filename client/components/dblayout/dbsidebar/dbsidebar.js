@@ -18,6 +18,6 @@ function dbsidebar() {
  * Sidebar
  * @type {angular.module}
  */
-angular.module('socially.layout')
+angular.module('socially.dblayout')
     .directive('sociallyDbSidebar', dbsidebar);
 //# sourceMappingURL=sidebar.js.map

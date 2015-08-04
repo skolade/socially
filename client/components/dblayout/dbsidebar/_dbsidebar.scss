@@ -11,3 +11,11 @@
     }
   }
 }
+md-sidenav{
+  background-color: #727272;
+}
+
+md-list md-list-item:hover{
+  background-color: #262d2d;
+  color: $primary-color-light;
+}

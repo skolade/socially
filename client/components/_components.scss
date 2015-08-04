@@ -2,6 +2,9 @@
 @import 'layout/navbar/navbar';
 @import 'layout/sidebar/sidebar';
 @import 'layout/footer/footer';
+@import 'dblayout/dbnavbar/dbnavbar';
+@import 'dblayout/dbsidebar/dbsidebar';
+@import 'dblayout/dbfooter/dbfooter';
 
 // Components
 @import 'accounts/accounts';

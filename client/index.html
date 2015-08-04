@@ -20,24 +20,15 @@
     </style>
 </head>
 
-<body>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" ng-hide="$root.currentUser">
-    <socially-navbar></socially-navbar>
-    <div class="android-content mdl-layout__content">
-      <main>
-          <ui-view></ui-view>
-      </main>
-      <socially-footer></socially-footer>
-    </div>
-  </div>
-  <!-- This is for the dashboard and login section -->
-  <div class="mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header" ng-show="$root.currentUser" layout="row" layout-fill>
-    <socially-db-sidebar></socially-db-sidebar>
-    <md-content layout="column">
-      <socially-db-navbar></socially-db-navbar>
-      <main flex layout-padding layout="column">
-         <ui-view></ui-view>
-       </main>
+<body layout="row">
+    <socially-db-sidebar ng-show="$root.currentUser" style="display: flex; height: 100%;" ></socially-db-sidebar>
+    <md-content layout="column" flex style="display: flex; height: 100%;">
+      <socially-db-navbar ng-show="$root.currentUser"></socially-db-navbar>
+      <socially-navbar ng-hide="$root.currentUser"></socially-navbar>
+
+      <md-content ui-view layout="column" flex>
+         <!-- <ui-view></ui-view> -->
+       </md-content>
+       <socially-footer ng-hide="$root.currentUser"></socially-footer>
     </md-content>
-  </div>
 </body>

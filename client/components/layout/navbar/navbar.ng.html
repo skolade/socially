@@ -3,11 +3,12 @@
     <md-button class="md-icon-button" aria-label="Side Menu" ng-click="navbar.Toggler.toggleLeft()" hide-gt-lg>
       <md-icon md-svg-icon="navigation:menu"></md-icon>
     </md-button>
-    <h2>
+    <!-- <h2>
       <span translate="TITLE"></span>
-    </h2>
+    </h2> -->
+    <img src="images/praytify-logo.png" alt="Praytify" />
     <span flex></span>
-    <div class="android-header-spacer mdl-layout-spacer"></div>
+    <div class="mdl-layout-spacer"></div>
          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
              <i class="material-icons">search</i>
@@ -57,9 +58,9 @@
       </div>
     </div>
 
-    <div ng-show="$root.currentUser" class="accounts-profile">
+    <!-- <div ng-show="$root.currentUser" class="accounts-profile">
       <a ui-sref="profile">{{ $root.currentUser.username }}</a>
-    </div>
+    </div> -->
     <md-button ui-sref="logout" ng-show="$root.currentUser" translate="ACCOUNTS.LOGOUT" aria-label="Logout"></md-button>
 
     <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">

@@ -31,7 +31,7 @@ var AccountsService = (function () {
         }
         else {
             // success
-            this.$state.go('profile');
+            this.$state.go('main');
         }
     };
     /**
