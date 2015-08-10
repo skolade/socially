@@ -3,7 +3,7 @@
     "filters": {
       "js": true,
       "html": true,
-      "css": true,
+      "scss": true,
       "pagination": true,
       "framework": "material",
       "bower": true,
