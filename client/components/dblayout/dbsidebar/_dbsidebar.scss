@@ -15,7 +15,30 @@ md-sidenav{
   background-color: #727272;
 }
 
-md-list md-list-item:hover{
-  background-color: #262d2d;
-  color: $primary-color-light;
+.sidebarNav md-list md-list-item{
+  transition: background-color 1s ease-out;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+ .sidebarNav md-list md-list-item:hover {
+   background-color:  rgba(0,176,255,1);
+   color: #fff0f5 !important;
+}
+
+.sidebarNav a {
+  color: rgba(255, 255, 255, 0.56);
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+md-sidenav md-content {
+  background-color: inherit;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.sidebarNav a md-icon {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 24px;
 }

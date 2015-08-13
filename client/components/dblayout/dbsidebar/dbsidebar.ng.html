@@ -1,9 +1,9 @@
   <md-sidenav class="md-sidenav-left md-sticky md-whiteframe-z3" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" flex>
-     <md-toolbar class="md-accent md-sticky md-whiteframe-z3">
+     <md-toolbar class="md-medium-tall md-accent md-sticky md-whiteframe-z3">
       <a class="md-toolbar-tools md-padding md-tall" href="/"><img src="images/praytify-logo.png" alt="Praytify" /></a>
     </md-toolbar>
-    <md-content style="min-height: 0; flex: 1; overflow: auto;">
-      <header class="drawer-header md-padding" layout="row">
+    <md-content layout="column" class="mdl-color--blue-grey-800 md-whiteframe-z3" style="min-height: 0; flex: 1; overflow: auto;">
+      <header class="drawer-header md-padding mdl-color--white" layout="row">
                 <div class="md-padding">
                   <img src="images/user.jpg" alt="">
                 </div>
@@ -20,39 +20,56 @@
                 </div>
       </header>
       <md-divider ></md-divider>
-      <md-content>
-        <md-list layout="column" layout-alight="start center">
+      <div class="sidebarNav mdl-color--blue-grey-800">
+        <md-list>
             <md-list-item href="">
-              <md-icon>home</md-icon>
-                <span class="md-padding">Dashboard</span>
+              <a href="">
+                <md-icon>home</md-icon>
+                  <span class="md-padding">Dashboard</span>
+              </a>
             </md-list-item>
             <md-list-item href="" >
+              <a href="">
                 <md-icon >forum</md-icon>
               <span class="md-padding">Activity</span>
+              </a>
+
             </md-list-item>
             <md-list-item href="" >
-              <md-icon >email</md-icon>
-               <span class="mdl-badge md-padding" data-badge="7">Messages</span>
+              <a href="">
+                <md-icon >email</md-icon>
+                 <span class="mdl-badge md-padding" data-badge="7">Messages</span>
+              </a>
+
             </md-list-item>
             <md-list-item href="" >
-              <md-icon >report</md-icon>
-              <span class="md-padding">Spam</span>
+              <a href="">
+                <md-icon >report</md-icon>
+                <span class="md-padding">Spam</span>
+              </a>
+
             </md-list-item>
             <md-list-item href="" >
-              <md-icon >people</md-icon>
-              <span class="md-padding">Friends</span>
+              <a href="">
+                <md-icon >people</md-icon>
+                <span class="md-padding">Friends</span>
+              </a>
             </md-list-item>
             <md-list-item   href="">
-              <md-icon >bookmark</md-icon>
-              <span class="md-padding">Bookmarks</span>
+              <a href="">
+                <md-icon >bookmark</md-icon>
+                <span class="md-padding">Bookmarks</span>
+              </a>
             </md-list-item>
             <md-list-item href="" >
-              <md-icon >local_offer</md-icon>
-              <span class="md-padding">settings</span>
+              <a href="">
+                <md-icon >local_offer</md-icon>
+                <span class="md-padding">settings</span>
+              </a>
             </md-list-item>
           <!--<md-divider></md-divider>-->
         </md-list>
-      </md-content>
+      </div>
     </md-content>
     <md-button>
       <md-icon >
